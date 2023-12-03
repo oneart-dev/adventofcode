@@ -6,12 +6,6 @@ import (
 	"strings"
 )
 
-var rules = map[string]int{
-	"red":   12,
-	"green": 13,
-	"blue":  14,
-}
-
 func Fun(input []string) interface{} {
 	result := 0
 	for _, line := range input {
