@@ -8,6 +8,7 @@ import (
 
 	"github.com/oneart-dev/adventofcode/star1"
 	"github.com/oneart-dev/adventofcode/star2"
+	"github.com/oneart-dev/adventofcode/star3"
 )
 
 var name string
@@ -42,6 +43,7 @@ func starsGenerator(n string) fun {
 	stars := map[string]fun{
 		"1": star1.Fun,
 		"2": star2.Fun,
+		"3": star3.Fun,
 	}
 
 	return stars[n]
