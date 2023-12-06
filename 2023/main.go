@@ -7,6 +7,7 @@ import (
 	"strings"
 
 	"github.com/oneart-dev/adventofcode/star1"
+	"github.com/oneart-dev/adventofcode/star10"
 	"github.com/oneart-dev/adventofcode/star2"
 	"github.com/oneart-dev/adventofcode/star3"
 	"github.com/oneart-dev/adventofcode/star4"
@@ -14,6 +15,7 @@ import (
 	"github.com/oneart-dev/adventofcode/star6"
 	"github.com/oneart-dev/adventofcode/star7"
 	"github.com/oneart-dev/adventofcode/star8"
+	"github.com/oneart-dev/adventofcode/star9"
 )
 
 var name string
@@ -46,14 +48,16 @@ type fun func(input []string) interface{}
 
 func starsGenerator(n string) fun {
 	stars := map[string]fun{
-		"1": star1.Fun,
-		"2": star2.Fun,
-		"3": star3.Fun,
-		"4": star4.Fun,
-		"5": star5.Fun,
-		"6": star6.Fun,
-		"7": star7.Fun,
-		"8": star8.Fun,
+		"1":  star1.Fun,
+		"2":  star2.Fun,
+		"3":  star3.Fun,
+		"4":  star4.Fun,
+		"5":  star5.Fun,
+		"6":  star6.Fun,
+		"7":  star7.Fun,
+		"8":  star8.Fun,
+		"9":  star9.Fun,
+		"10": star10.Fun,
 	}
 
 	if _, ok := stars[n]; !ok {
