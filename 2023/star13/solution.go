@@ -53,7 +53,7 @@ func Fun(input []string) interface{} {
 		v := gameRank[i]
 
 		if len(v) == 1 {
-			for s, v := range v {
+			for _, v := range v {
 				sortedGames = append(sortedGames, v)
 			}
 
